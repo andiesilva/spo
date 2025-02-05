@@ -7,8 +7,6 @@ title: About
   SPO aims to catalogue the prefaces, dedications, tables of content, and errata composed by early English stationers (1500-1700).
 </p>
 
-# About
-
 In <i>The Brand of Print</i> (2019) I sought to understand the intricate and unique ways print agents (booksellers, printers, editors, stationers, and publishers) manipulated the space of the paratext. As I argue in the book, paratexts offered print agents visual, rhetorical, and affective spaces for addressing bookbuyers directly and forging relationships that were both financial and social in nature. Some of the project’s key research questions were: what do stationers’ paratexts teach us about the print marketplace? And what happens when we take a bird’s eye view of these paratexts as a genre unto themselves?
 
 In order to answer these questions, I began the painstaking work of combing through Early English Books Online (EEBO) for examples of epistles, dedications, errata, and any other paratexts authored or designed by print agents. Despite EEBO’s search capabilities (and even after its integration with EEBO-TCP), this work was slow and mostly manual, as it required scrolling through each stationer’s catalogue and reading the first few pages to identify non-authorial front and back matter. While sometimes the print agent would helpfully label an epistle, “the printer to the reader,” patron dedications and prefaces were not often titled, and only occasionally signed. 
@@ -19,14 +17,14 @@ To build my research dataset, I turned to Franklin B. Williams’ <i>Index of De
 <b>Stationers’ Paratexts Online</b> aims to be a research tool to aid the work of paratextual studies, particularly those focused on the work of the print marketplace. This database expands the records from Williams’ Index, and, once completed, will allow users to filter results by trade, genre, paratext type, and even gender (more on that later!). The dataset currently includes roughly 600 entries from Williams’ Index (adding or correcting additional copies not listed or misattributed).</p><p> I am currently in the process of adding paratexts printed or authored by women stationers, many of which were excluded from Williams due to later publication dates (post 1641) or paratext types (e.g. advertisements, errata, and other paratexts beyond dedications and verses). This labor is even slower and more manual than working through EEBO with Williams! So, if you have any entries you’d like to suggest, feel free to do so <a href="https://forms.gle/fmpyhTfKQzaMrs7S8">here</a>.
 <p></p>
 This project has been a long time coming; given the demands of academia and the complex support structures for small-scale digital humanities projects, it will continue to be updated slowly. While this front-end searchable database continues to develop, researchers are invited to download the dataset in .CSV format to explore on their own. The most up-to-date dataset will always be available <a href="https://github.com/andiesilva/stationersparatextsonline">on this project’s central GitHub repository</a>.
-
+<p></p>
 # Documentation
 
-This project documents paratexts written or designed by stationers from c.1500-1700. It includes only works printed in English (excluding Latin, French, or Spanish titles printed in England). 
+This project documents paratexts written or designed by stationers from c.1500-1700. It includes only works printed in English (excluding Latin, French, or Spanish titles printed in England). <p>
 
 ## Normalization
 
-I maintain original early modern spelling and syntax, with the exception of changing u/v, i/j, vv/ww where needed for the sake of clarity. I do not capitalize nouns when transcribing titles of paratexts or book titles. When cataloguing authors and stationers, spelling of names has been regularized to the most common spelling as listed in STC and the Oxford Dictionary of National Biography (e.g. "John Day" and not "Jhon Daie"). However, the "imprint" metadata maintains original spelling. 
+I maintain original early modern spelling and syntax, with the exception of changing u/v, i/j, vv/ww where needed for the sake of clarity. I do not capitalize nouns when transcribing titles of paratexts or book titles. When cataloguing authors and stationers, spelling of names has been regularized to the most common spelling as listed in STC and the Oxford Dictionary of National Biography (e.g. "John Day" and not "Jhon Daie"). However, the "imprint" metadata maintains original spelling. <p>
 
 ## Data Model  
 Data in this project is organized according to the following structure:</p>
