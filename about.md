@@ -18,15 +18,14 @@ To build my research dataset, I turned to Franklin B. Williams’ <i>Index of De
 <p></p>
 This project has been a long time coming; given the demands of academia and the complex support structures for small-scale digital humanities projects, it will continue to be updated slowly. While this front-end searchable database continues to develop, researchers are invited to download the dataset in .CSV format to explore on their own. The most up-to-date dataset will always be available <a href="https://github.com/andiesilva/stationersparatextsonline">on this project’s central GitHub repository</a>.
 <p></p>
-# Documentation
+<h1>Documentation</h1>
 
 This project documents paratexts written or designed by stationers from c.1500-1700. It includes only works printed in English (excluding Latin, French, or Spanish titles printed in England). <p>
 
-## Normalization
-
+<h2>Normalization</h2>
 I maintain original early modern spelling and syntax, with the exception of changing u/v, i/j, vv/ww where needed for the sake of clarity. I do not capitalize nouns when transcribing titles of paratexts or book titles. When cataloguing authors and stationers, spelling of names has been regularized to the most common spelling as listed in STC and the Oxford Dictionary of National Biography (e.g. "John Day" and not "Jhon Daie"). However, the "imprint" metadata maintains original spelling. <p>
 
-## Data Model  
+<h2>Data Model</h2>  
 Data in this project is organized according to the following structure:</p>
 <p></p>
 <b>Paratext Author</b>: The individual who signed or is presumed to have authored the paratexts in each printed book. These are typically printers, publishers, booksellers, or editors, though occasionally the name of the book’s author or translator will appear here if they wrote an epistle “to the stationer.”
@@ -67,7 +66,7 @@ Additional Paratexts: Lists any authorial or editorial paratexts by title
 <b>Copy From</b>: Names the library copy used to generate EEBO scans.
 
 
-# Contributors & Acknowledgements
+<h1>Contributors & Acknowledgements</h1> 
 
 <p>I am grateful to the PSC CUNY Research Awards and the CUNY Research Foundation for generously funding earlier stages of this project. Thank you also to Laura Estill and Simone Chess for contributing feedback and encouragement at earlier stages of this project, and to Tuka Al-Sahlani for her work with data gathering.</p>
 
