@@ -29,40 +29,40 @@ I maintain original early modern spelling and syntax, with the exception of chan
 Data in this project is organized according to the following structure:</p>
 <p></p>
 <b>Paratext Author</b>: The individual who signed or is presumed to have authored the paratexts in each printed book. These are typically printers, publishers, booksellers, or editors, though occasionally the name of the book’s author or translator will appear here if they wrote an epistle “to the stationer.”
-
+<p></p>
 <b>Gender</b>: The paratext author’s presumed gender assigned at birth. This category helps us filter results to find only women stationers, or texts which were published by several stationers.
-
+<p></p>
 <b>Imprint</b>: Transcribed to include only the title page imprint, without any later additions or conjectures from the STC. Additional information can be found in “additional stationer” and in notes.
-
+<p></p>
 <b>Trade</b>: Trades are listed according to how the stationer refers to themselves in the text, with additional trades listed after consultation with the British Book Trade Index (BBTI) and the Consortium of European Research Libraries (CERL) Thesaurus (particularly useful for information on women printing outside of England).
-
+<p></p>
 <b>Additional Stationer</b>: Any other printers, publishers, or booksellers associated with the publication, whether listed in the imprint or conjectured by STC.
-
+<p></p>
 <b>Publication Author</b>: Official or named author as listed in the ESTC. This may also include translators.
- 
+ <p></p>
 <b>Additional Authors</b>: Any collaborators or original language authors. 
-
+<p></p>
 <b>Title</b>: Full title as listed in the ESTC.
-
+<p></p>
 <b>Genre</b>: Genre as listed in EEBO/ESTC or additional genres added by the USTC (when useful).
- 
+<p></p> 
 <b>Year</b>: Publication year as listed on title page or amended by STC.
-
+<p></p>
 <b>Paratext Title</b>: The title as printed in the text. When signed, author’s name is added in parenthesis.
-
+<p></p>
 <b>Paratext Type</b>: List of possible paratexts include: table of contents, index, errata, to the reader, catalogue, advertisement, dedication, to the stationer (dedications from authors to stationers), permission.
-
+<p></p>
 <b>Dedicatee</b>: When relevant, includes the formal name and/or title of the dedicatee 
-
+<p></p>
 <b>Assumed Dedicatee Gender</b>: Presumed gender assigned at birth. 
-
+<p></p>
 <b>Illustration</b>: Lists whether text contains any illustrations (aside from title page).
-
+<p></p>
 <b>STC/Call Number</b>: STC or Wing call number 
 Additional Paratexts: Lists any authorial or editorial paratexts by title
-
+<p></p>
 <b>Notes</b>: Additional conjectures by STC, Williams, or Silva.
-
+<p></p>
 <b>Copy From</b>: Names the library copy used to generate EEBO scans.
 
 
