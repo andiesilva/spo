@@ -73,8 +73,3 @@ Additional Paratexts: Lists any authorial or editorial paratexts by title
 <p>Early work for this project was conceptualized at the Digital Humanities Summer Institute. </p>
 
 
-# Sources
-
-<p>
-  
-</p>
