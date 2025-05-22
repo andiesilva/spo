@@ -16,4 +16,4 @@ I'm currently working on biographical data for printers, publishers, and booksel
 
 ### Download
 
-Researchers are always invited to dowload the most up-to-date datasets from <a href="https://github.com/andiesilva/stationersparatextsonline">GitHub</a>. Let me<a href="mailto:asilva@york.cuny.edu">know</a> if you do anything cool with this data!
+Researchers are always invited to dowload the most up-to-date datasets from <a href="https://github.com/andiesilva/stationersparatextsonline">GitHub</a>. Let me<a href="mailto:asilva@york.cuny.edu"> know</a> if you do anything cool with this data!
