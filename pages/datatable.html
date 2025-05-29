@@ -25,6 +25,8 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
  <script type="text/javascript" src="//cdn.datatables.net/plug-ins/2.1.8/features/pageResize/dataTables.pageResize.min.js"></script>
+
+ 
    
    
    <title>Browse</title>
@@ -33,7 +35,7 @@
    
 
 		
-		}
+		
 
 		table.Williams th,
 		table.Williams td {
@@ -74,6 +76,14 @@ table.Williams  {
        width: 80%;
       justify-content: center;    
     }
+
+   /* dropdown filter */
+
+  select.form-control{
+    display: inline;
+    width: 200px;
+    margin-left: 25px;
+  }
     
         
   </style>
@@ -101,9 +111,18 @@ table.Williams  {
         
 		<li>Filtered search functionalities are forthcoming! In the meantime, the search box below will help you narrow this table down using keywords. Use quotation marks if you would like to search for an exact phrase.</li>
           </ul></div>
+
+            <div class="text">
+      <select id="categoryFilter" class="form-control">
+        <option value="">Filter by Trade</option>
+        <option value="Printer">Printer</option>
+        <option value="Publisher">Publisher</option>
+        <option value="Bookseller">Bookseller</option>
+      </select>
+    </div>
         
         <div id="resize_wrapper" class="container">
-    <table id="Williams"  class="display pageResize" style="width:210%; vertical-align: middle" class="nowrap">
+    <table id="Williams"  class="display pageResize" style="width:210%; vertical-align: middle" class=" display responsive nowrap">
 	    
     <thead>
 <tr><th>Paratext Author</th><th>Gender</th><th>Title</th><th>Imprint</th><th>Trade</th><th>Additional Print Agents</th><th>Title Page Author</th><th>Publication Author</th><th>Additional Authors</th><th>Alternate Titles</th><th>Genre</th><th>Year</th><th>Paratext Title</th><th>Paratext Type</th><th>Dedicatee</th><th>Dedicatee Gender</th><th>STC No</th><th>Additional Paratexts</th><th>Notes</th><th>Copy From</th></tr></thead>
@@ -1299,14 +1318,22 @@ Serenissimo Regi Edwardo Sexto Deigratia, Angliae, Franciae, &amp; Hiberniae Mon
      
         </div>
      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.1.8/b-3.1.2/b-colvis-3.1.2/b-html5-3.1.2/fh-4.0.1/r-3.0.3/sb-1.8.1/sp-2.3.3/sr-1.4.1/datatables.min.js"></script>
-      
-    <script> $('#Williams').DataTable( {
-	pageLength: 20,
-   
-  responsive: true,
+
   
-});
+      
+    <script>const table = $('#Williams').DataTable( {
+	responsive: true,
+  pageLength: 20,
+   search: true
+      });
+      $('#categoryFilter').on('change', function(){
+       table.column(4).search(this.value).draw();   
+    });
       </script>
+<script>
+    
+
+</script>
     </body>
     
 </html>
