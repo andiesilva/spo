@@ -79,11 +79,20 @@ table.Williams  {
 
    /* dropdown filter */
 
-  select.form-control{
-    display: inline;
+  .select.form-control{
+    display: inline-block;
     width: 200px;
     margin-left: 25px;
   }
+
+  .filter {
+	display: inline-block;
+      padding-left: 100px; 
+        padding-right: 50px; 
+        margin-right: auto;
+      margin-left: 50px;
+       width: 80%;    
+    }
     
         
   </style>
@@ -112,7 +121,7 @@ table.Williams  {
 		<li>Filtered search functionalities are in progress! In the meantime, the search box below will help you narrow this table down using keywords. Use quotation marks if you would like to search for an exact phrase.</li>
           </ul></div>
 
-            <div class="text">
+            <div class="filter">
       <select id="categoryFilter" class="form-control">
         <option value="">Filter by Trade</option>
         <option value="Printer">Printer</option>
@@ -120,6 +129,15 @@ table.Williams  {
         <option value="Bookseller">Bookseller</option>
         <option value="Editor">Editor</option>
         <option value="Stationer">Stationer</option>
+      </select>
+     
+      <select id="genreFilter" class="form-control">
+        <option value="">Filter by Genre</option>
+        <option value="Military">Military</option>
+        <option value="Translation">Translation</option>
+        <option value="Devotional">Devotional</option>
+        <option value="Politics">Politics</option>
+        <option value="Travel">Travel</option>
       </select>
     </div>
         
@@ -276,7 +294,7 @@ table.Williams  {
 </td></tr>
 <tr><td>Edward Blount</td><td>Male</td><td>Micro-cosmographie. Or, a peece of the world discovered</td><td>At London: Printed by W. S. for Ed. Blount</td><td>Bookseller</td><td></td><td></td><td>John Earle</td><td></td><td>Micro-cosmographie</td><td>Travel</td><td>1628</td><td>To the reader gentile or gentle | A Table of Contents |</td><td>To the Reader | Table of Contents</td><td></td><td></td><td>7439</td><td></td><td>Reader corrections to folio numbers on table of contents | See also STC 7440.2</td><td>British Library
 </td></tr>
-<tr><td>Edward Blount</td><td>Male</td><td>Christian policie, or, The Christian common-wealth published for the good of kings and princes, and such as are in authoritie under them and trusted with state affaires: as also for true hearted subjects / written in Spanish, and translated in English</td><td>London: Printed by Thomas Harper, for Richard Collins, and are to be sold at his shop in Pauls Church-yard at the signe of the Three Kings</td><td>Publisher | Editor</td><td>Thomas Harper | Richard Collins</td><td></td><td>Juan de Santa Maria</td><td>Edward Blount</td><td>Rep√∫blica y polic√≠a christiana.</td><td>Politics</td><td>1632</td><td>A table containing the chapters and paragraphes of this booke | To the right honoraurable James Hay, early of Carlile, Viscount Doncaster, lord Hay of Sauley, Gentleman of the Bed-Chamber to our Soveraigne Lord King Charles, Knight of the most Noble order of the Garder, and one of the Lords of his Majesties most honorable Priviy Councell (Edward Blount) | Errata</td><td>Table of Contents | Dedication | Errata</td><td>James Hay</td><td></td><td>14831</td><td>The authors epistle dedicatorie to the King of Spaine (Fr. Juan de Santa Maria)</td><td></td><td>British Library
+<tr><td>Edward Blount</td><td>Male</td><td>Christian policie, or, The Christian common-wealth published for the good of kings and princes, and such as are in authoritie under them and trusted with state affaires: as also for true hearted subjects / written in Spanish, and translated in English</td><td>London: Printed by Thomas Harper, for Richard Collins, and are to be sold at his shop in Pauls Church-yard at the signe of the Three Kings</td><td>Publisher | Editor</td><td>Thomas Harper | Richard Collins</td><td></td><td>Juan de Santa Maria</td><td>Edward Blount</td><td>Republica y politica christiana.</td><td>Politics</td><td>1632</td><td>A table containing the chapters and paragraphes of this booke | To the right honoraurable James Hay, early of Carlile, Viscount Doncaster, lord Hay of Sauley, Gentleman of the Bed-Chamber to our Soveraigne Lord King Charles, Knight of the most Noble order of the Garder, and one of the Lords of his Majesties most honorable Priviy Councell (Edward Blount) | Errata</td><td>Table of Contents | Dedication | Errata</td><td>James Hay</td><td></td><td>14831</td><td>The authors epistle dedicatorie to the King of Spaine (Fr. Juan de Santa Maria)</td><td></td><td>British Library
 </td></tr>
 <tr><td>Edward Blount</td><td>Male</td><td>Sixe court comedies Often presented and acted before Queene Elizabeth, by the Children of her Majesties Chappell, and the Children of Paules. Witten [sic] by the onely rare poet of that time, the witie, comicall, facetiously-quicke and unparalelld: John Lilly, Master of Arts.</td><td>London: Printed by William Stansby for Edward Blount</td><td>Bookseller</td><td>William Stansby</td><td>John Lilly</td><td>John Lyly</td><td></td><td>Plays. Selected Plays.</td><td>Drama | Comedies</td><td>1632</td><td>To the right honorable Richard Lumley, Viscount of Waterford (Ed. Blount) | To the Reader (Ed. Blount)</td><td>Dedication | To the Reader</td><td>Richard Lumley, Viscount of Waterford</td><td>Male</td><td>17088</td><td></td><td>STC 17089 is another copy with the same paratexts</td><td>The Huntington Library
 </td></tr>
@@ -1330,6 +1348,10 @@ Serenissimo Regi Edwardo Sexto Deigratia, Angliae, Franciae, &amp; Hiberniae Mon
       });
       $('#categoryFilter').on('change', function(){
        table.column(4).search(this.value).draw();   
+    });
+
+      $('#genreFilter').on('change', function(){
+       table.column(10).search(this.value).draw();   
     });
       </script>
 <script>
