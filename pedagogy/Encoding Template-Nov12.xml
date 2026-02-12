@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TITLE OF YOUR TEXT HERE</title>
+                <author>AUTHOR OF THE TEXT HERE</author>
+                <respStmt>
+                    <persName>YOUR NAME HERE</persName>
+                    <resp>transcriber</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>YOUR PEER'S HERE</persName>
+                    <resp>proofreader</resp>
+                </respStmt>
+                <!--add here the name of your peer who worked with you on proofreading the transcription on November 5 -->
+                <respStmt>
+                    <persName>Andie Silva</persName>
+                    <resp>proofreader</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Collaboratory for Writing and Research on Culture (CWRC https://cwrc.ca) and Linked Editing Academic Framework (LEAF https://leaf-vre.org).</publisher>
+                <availability>
+                    <licence>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>This TEI document was adapted from the template created by members of CWRC and LEAF using pedagogical materials from Laura Estill and Rebecca Nesvet.</p>
+            </sourceDesc>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author><!-- DELETE THIS COMMENT AND REPLACE WITH THE AUTHOR OF YOUR TEXT --></author>
+                        <title><!-- DELETE THIS COMMENT AND REPLACE WITH THE TITLE OF YOUR TEXT --></title>
+                        <imprint>
+                            <publisher><!-- DELETE THIS COMMENT AND REPLACE WITH THE PRINTER OF YOUR TEXT --></publisher>
+                            <pubPlace><!-- DELETE THIS COMMENT AND REPLACE WITH THE ADDRESS ON THE TITLE PAGE OF YOUR TEXT --></pubPlace>
+                            <date><!-- DELETE THIS COMMENT AND REPLACE WITH THE PUBLICATION DATE OF YOUR TEXT --></date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <msDesc>
+                    <!-- PROF. SILVA WILL CHANGE THIS SECTION FOR YOUR FINAL DRAFT-->
+                    <msIdentifier>
+                        <repository>Folger Shakespeare Library</repository>
+                        <!-- PROF. SILVA WILL CHANGE THIS SECTION FOR YOUR FINAL DRAFT-->
+                        <idno>STC 4987 copy 1</idno>
+                        <!-- PROF. SILVA WILL CHANGE THIS SECTION FOR YOUR FINAL DRAFT-->
+                    </msIdentifier>
+                    <additional>
+                        <listBibl>
+                            <bibl type="LibCat"> <!-- PROF. SILVA WILL CHANGE THIS SECTION FOR YOUR FINAL DRAFT-->
+                                <link
+                                    target="http://hamnet.folger.edu/cgi-bin/Pwebrecon.cgi?BBID=160690"
+                                /> <!-- PROF. SILVA WILL CHANGE THIS SECTION FOR YOUR FINAL DRAFT-->
+                            </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This template was made available for use with the LEAF-Writer semantic editor. It was adapted by Andie Silva and the York College ENG 328 Fall 2025 class.</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization method="silent">
+                    <!-- CHANGE THIS TO INDICATE WHAT YOU'VE DONE.  -->
+                    <p>All words converted to Modern American spelling using Websters 9th Collegiate dictionary. All early modern uses of i, j, u, v, and vv have been silently changed in accordance to modern 20th century typographical practice. OR MAINTAINED FOR A DIPLMATIC TRANSCRIPTION. Capitalization of nouns has been silently removed/maintained. </p>
+                </normalization>
+                <hyphenation eol="some">
+                    <!-- THIS IS THE PLACE TO INDICATE WHETHER YOU DID OR DID NOT PRESERVE HYPHENS FOR WORDS THAT BREAK OFF A THE LINE ENDING. YOU CAN CHANGE THIS TO ALL, HARD, OR NONE. SEE THE CHEATSHEET -->
+                    <p>End-of-line hyphenation silently removed where appropriate</p>
+                </hyphenation>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2025-06-04" who="diane_jakacki">Revised blank template for use with LEAF-Writer editor.</change>
+            <change when="2025-11-10" who="andie silva">Adapted template for using with York College ENG 328 class.</change>
+            <change when="2025-11-12" who="YOUR NAME">Added transcriptions and first pass at encoding.</change>
+            <!-- ADD YOUR NAME -->
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic
+            url="http://shakespearedocumented.org/exhibition/document/early-17th-century-manuscript-note-adapting-couplet-pericles-end-copy-humourous"/>
+        <!-- PROF. SILVA WILL CHANGE THIS LATER -->
+        <graphic url="http://luna.folger.edu/luna/servlet/s/3s878o"/>
+    </facsimile>
+    <!-- PROF. SILVA WILL CHANGE THIS LATER -->
+    <text>
+        <body>
+            <pb n="sig. XXX"/>
+            <!-- CHANGE THIS TO YOUR SPECIFIC SIGNATURE NUMBER. MOST LIKELY YOUR PARATEXT IS ON A1r but if you can't tell, put down "NP" for now -->
+
+            <div type="printer-to-the-reader">
+
+                <p>
+                    <lb/>Your transcription begins here. </p>
+
+
+
+                <!-- See examples in the CHEATSHEET-->
+                <!-- Make sure you wrap your text in markup, such as <p> or <line>. If you get errors let me know! -->
+
+
+
+
+            </div>
+        </body>
+    </text>
+</TEI>
