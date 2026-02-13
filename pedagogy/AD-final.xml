@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Complaints. Containing sundrie small Poemes of the Worlds Vanitie.</title>
+                <author>Edmund Spenser</author>
+                <respStmt>
+                    <persName>Ariana Dharambeer</persName>
+                    <resp>transcriber</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Andie Silva</persName>
+                    <resp>proofreader</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Collaboratory for Writing and Research on Culture (CWRC https://cwrc.ca)
+                    and Linked Editing Academic Framework (LEAF https://leaf-vre.org).</publisher>
+                <availability>
+                    <licence>Creative Commons Attribution 4.0 International
+                        (https://creativecommons.org/licenses/by/4.0/)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>This TEI document was adapted from the template created by members of CWRC and
+                    LEAF using pedagogical materials from Laura Estill and Rebecca Nesvet.</p>
+            </sourceDesc>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Edmund Spenser</author>
+                        <title>Complaints. Containing Sundrie Small Poemes of the Worlds
+                            Vanitie.</title>
+                        <imprint>
+                            <publisher>William Ponsonby</publisher>
+                            <pubPlace>London</pubPlace>
+                            <date>1591</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <msDesc>
+                    <msIdentifier>
+                        <repository> University of Illinois Urbana-Champaign</repository>
+                        <idno>STC 23078</idno>
+                    </msIdentifier>
+                    <additional>
+                        <listBibl>
+                            <bibl type="InternetArchive">
+                                <link
+                                    target="https://archive.org/details/complaintscontai00spen/mode/2up"
+                                />
+                            </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This template was made available for use with the LEAF-Writer semantic editor. It
+                    was adapted by Andie Silva and the York College ENG 328 Fall 2025 class.</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization method="silent">
+                    <p>All early modern uses of i, j, u, v, and vv have been maintained for a
+                        diplomatic transcription. Capitalization of nouns has been maintained. </p>
+                </normalization>
+                <hyphenation eol="none">
+
+                    <p>End-of-line hyphenation silently removed where appropriate</p>
+                </hyphenation>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2025-06-04" who="diane_jakacki">Revised blank template for use with
+                LEAF-Writer editor.</change>
+            <change when="2025-11-10" who="andie silva">Adapted template for using with York College
+                ENG 328 class.</change>
+            <change when="2025-11-12" who="ariana dharambeer">Added transcriptions and first pass at
+                encoding.</change>
+            <change when="2025-11-16" who="andie silva">Reviewed document for errors</change>
+            <change when="2026-02-11" who="andie silva">Added @rend to identify use of italics.</change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="https://archive.org/details/complaintscontai00spen/page/2/mode/1up"/>
+    </facsimile>
+    <text>
+        <body>
+            <pb n="sig. A2r"/>
+            <div type="printer-to-the-reader">
+                <salute> The Printer to the Gentle Reader. </salute>
+
+                <p>SINCE my late setting foorth of the <title>Faerie Queene</title>, finding
+                        that it hath found a fauourable passage amongst you; I have sithence
+                        endeuoured by all good meanes (for the better encrease and accomplishment of
+                        your delights,) to get into my handes such smale Poemes of the same Authors;
+                        as I heard were disperst abroad in sundrie hands, and not easie to bee come
+                        by, by himselfe; some of them hauing bene diuerslie imbeziled and purloyned
+                        from him, since his departure ouer Sea. Of which I haue by good meanes
+                        gathered togeather these fewe parcels present, which I haue caused to bee
+                        imprinted al-<pb n="sig. A2v"/>
+                            <graphic
+                                url="https://archive.org/details/complaintscontai00spen/page/3/mode/1up"
+                            />
+                        togeather, for that they al seeme to containe like matter of
+                        argument in them: being all complaints and meditations of the world's
+                        vanitie, verie graue and profitable. To which effect I vnderstand that he
+                        besides wrote sundrie others, namelie <title rend="italics">Ecclesiastes</title>, &amp;
+                    <title rend="italics">Canticum canticorum</title> translated, <title rend="italics">A senights
+                        slumber</title>, <title rend="italics">The hell of louers his
+                            Purgatorie</title>, being all dedicated to Ladies; so as it may seeme he
+                        ment them all to one volume. Besides some other Pamphlets looselie scattered
+                        abroad: as <title rend="italics">The dying Pellican</title>, <title rend="italics">The howers of the
+                            Lord</title>, <title rend="italics">The scarifice of a sinner</title>, <title rend="italics">The seuen
+                            Psalmes, &amp;tc</title>. which when I can either by
+                        himselfe, or otherwise attaine too, I meane likewise for your fauour sake to
+                        set foorth. In the meane time praying you gentlie to accept of these, and
+                        graciouslie to entertaine the new Poet.</p> <closer rend="italics"><salute>I take
+                                leaue.</salute></closer>
+
+
+
+            </div>
+        </body>
+    </text>
+</TEI>
