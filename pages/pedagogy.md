@@ -1,0 +1,27 @@
+---
+layout: page
+title: Teaching with SPO
+---
+<div class="page">
+  
+  <header>
+    <h1 class="landing-title">Teaching with SPO</h1>
+  </header>
+  
+  <div class="text-left">
+    <p>
+       <p>I encourage scholars and learners to make use of this project in their classrooms. <a href="https://docs.google.com/document/d/1HzwhQ0kvPaKYDQHH_PaiRHXwLbqequWn_QGUqIJVtmY/edit?usp=sharing">Here</a> you can find a sample prompt I've used in my Medieval and Renaissance Studies course to produce TEI-encoded transcriptions of a short number of paratexts. This work is adapted from Laura Estill's <a href="https://doi.org/10.1515/9781802701258-009">“Encoding Early Modern Commonplace Books in the Classroom</a>,” in <i>Using Commonplace Books to Enrich Medieval and Renaissance Courses</i>, edited by Sarah E. Parker and Andie Silva (pp.119-140).</p>
+    <br>
+        <p>Below are some samples of student-produced materials, shared and cited with permission:</p>
+        <li>Brianna McPherson, encoder. "The printer to all women that covet the practice of good housewivery as well as maids," in John Partridge, <i>The Treasurie of Commodious Conceits and Hidden Secrets</i>, printed by Richard Jones, 1591.</li>
+    <li>Ariana Dharambeer, encoder. <a href="https://andiesilva.github.io/spo/src/content/AD-bp.xml">The Printer to the Gentle Reader</a>," in Edmund Spenser, <i>Complaints. Containing sundrie small Poemes of the Worlds Vanitie</i>, printed by William Ponsomby, 1591.</li> <a href="https://github.com/andiesilva/pedagogy/AD-final.xml">XML File here</a>.
+    </br>
+      <p>
+        <h2>Some Considerations</h2>
+        <li>The assignment prompt, sample TEI template, and "encoding cheatsheet" are available for download in the project's <a href="https://github.com/andiesilva/spo">GitHub repository</a>.</li>
+      <li>I originally taught this assignment in a literature survey course, where students had varying comfort levels with technology. We worked from a template with the TEI header mostly pre-written, with placeholders and comments where the students were to add their own information.</li>
+        <li>An in-class workshop (preferably on a computer lab) is imperative for hands-on practice and to give opportunities for peer support.</li>
+        <li>Following Estill, I also set up in-class exercises for students to 1) work on their their transcriptions; 2) proofread their work with a peer; and 3) highlight the textual elements they wished to mark up, such as page breaks, gaps, and publication titles.</li>
+        <li>I left it open as to whether students would normalize their transcriptions or not. Some students chose to employ the 'choice' element to offer both options to readers. Folks seeking consistency in the submitted work may require students to stick to one, pre-determined option.</li>
+        <li>In order to bypass the fact that we didn't have Oxygen licenses or a quick way to pre-install the software in our school computers, we used a simple online XML editor. For more hands-on learning with TEI, instructors may consider <a href="https://www.leaf-vre.org/">LEAF VRE</a>'s <a href="https://leaf-writer.leaf-vre.org/">Leaf Writer</a>, instead.</li>
+      </p>
