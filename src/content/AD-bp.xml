@@ -10,13 +10,12 @@
                 <author>Edmund Spenser</author>
                 <respStmt>
                     <persName>Ariana Dharambeer</persName>
-                    <resp>transcriber</resp>
-                    <resp>encoder</resp>
+                    <resp>Transcriber and encoder</resp>
                 </respStmt>
                 <respStmt>
                     <persName>Andie Silva</persName>
-                    <resp>proofreader</resp>
-                    <resp>encoder</resp>
+                    <resp>Proofreader and encoder</resp>
+                    <resp></resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
