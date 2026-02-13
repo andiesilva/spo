@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Complaints. Containing sundrie small Poemes of the Worlds Vanitie.</title>
+                <author>Edmund Spenser</author>
+                <respStmt>
+                    <persName>Ariana Dharambeer</persName>
+                    <resp>transcriber</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Andie Silva</persName>
+                    <resp>proofreader</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Collaboratory for Writing and Research on Culture (CWRC https://cwrc.ca)
+                    and Linked Editing Academic Framework (LEAF https://leaf-vre.org).</publisher>
+                <availability>
+                    <licence>Creative Commons Attribution 4.0 International
+                        (https://creativecommons.org/licenses/by/4.0/)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>This TEI document was adapted from the template created by members of CWRC and
+                    LEAF using pedagogical materials from Laura Estill and Rebecca Nesvet.</p>
+            </sourceDesc>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Edmund Spenser</author>
+                        <title>Complaints. Containing Sundrie Small Poemes of the Worlds
+                            Vanitie.</title>
+                        <imprint>
+                            <publisher>William Ponsonby</publisher>
+                            <pubPlace>London</pubPlace>
+                            <date>1591</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <msDesc>
+                    <msIdentifier>
+                        <repository> University of Illinois Urbana-Champaign</repository>
+                        <idno>STC 23078</idno>
+                    </msIdentifier>
+                    <additional>
+                        <listBibl>
+                            <bibl type="InternetArchive">
+                                <link
+                                    target="https://archive.org/details/complaintscontai00spen/mode/2up"
+                                />
+                            </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This template was made available for use with the LEAF-Writer semantic editor. It
+                    was adapted by Andie Silva and the York College ENG 328 Fall 2025 class.</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization method="silent">
+                    <p>All early modern uses of i, j, u, v, and vv have been maintained for a
+                        diplomatic transcription. Capitalization of nouns has been maintained. </p>
+                </normalization>
+                <hyphenation eol="none">
+
+                    <p>End-of-line hyphenation silently removed where appropriate</p>
+                </hyphenation>
+            </editorialDecl>
+            <tagsDecl>	
+                <!-- Basic text formatting: bold, italic, underline, "normal," etc. -->
+                <rendition xml:id="b" n="tiebp:bold" scheme="css">
+                    font-weight:bold;
+                </rendition> 
+                
+                <rendition xml:id="i" n="tiebp:italic" scheme="css">
+                    font-style:italic;
+                </rendition> 
+                
+                <rendition xml:id="u" n="tiebp:underline" scheme="css">
+                    text-decoration:underline;
+                </rendition> 
+                
+                <rendition xml:id="n" n="teibp:normal" scheme="css">
+                    font-weight:normal;
+                    text-decoration:none;
+                    font-style:normal;
+                </rendition>
+                
+                <rendition xml:id="mono" n="teibp:mono" scheme="css">
+                    font-family:Monaco,Courier,monospace;
+                </rendition>
+                
+                <rendition xml:id="super" n="tiebp:super" scheme="css">
+                    vertical-align:super;
+                    font-size:80%;
+                </rendition>
+                
+                <rendition xml:id="sub" n="tiebp:sub" scheme="css">
+                    vertical-align:sub;
+                    font-size:80%;
+                </rendition>
+                
+                <rendition xml:id="lowercase" n="tiebp:lowercase" scheme="css">
+                    text-transform:lowercase;
+                </rendition>
+                
+                <rendition xml:id="uppercase" n="tiebp:uppercase" scheme="css">
+                    text-transform:uppercase;
+                </rendition>
+                
+                <rendition xml:id="capitalize" n="tiebp:capitalize" scheme="css">
+                    text-transform:capitalize;
+                </rendition>
+                
+                <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+                    font-variant:small-caps;
+                </rendition>
+                
+                <!-- Blocks. -->
+                <rendition xml:id="block" n="tiebp:block" scheme="css">
+                    display:block;
+                </rendition> 
+                <rendition xml:id="block-margins" n="teibp:block-margins" scheme="css">
+                    display:block;
+                    margin-top:1em;
+                    margin-bottom:1em;
+                </rendition>
+                <rendition xml:id="blockquote" n="tiebp:blockquote" scheme="css">
+                    display:block;
+                    font-size:90%;
+                    margin-left:3em;
+                    padding-left:1em;
+                    border-left: 1px solid gray;
+                    margin-top:.75em;
+                    margin-bottom:.75em;
+                    padding-top:.75em;
+                    padding-bottom:.75em;
+                </rendition>
+                
+                <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="before">
+                    <!-- This turns off the default generated quotes for block quotes. -->
+                    content:"" !important;
+                </rendition>
+                
+                <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="after">
+                    <!-- This turns off the default generated quotes for block quotes. -->
+                    content:"" !important;
+                </rendition>
+                
+                <rendition xml:id="codeblock" n="teibp:codeblock" scheme="css">
+                    display: block;
+                    font-size: 80%;
+                    margin-left: 1em;
+                    padding-left: 1em;
+                    border-left: 1px solid gray;
+                    margin-top: .75em;
+                    margin-bottom: .75em;
+                    padding-top: .75em;
+                    padding-bottom: .75em;
+                    font-family:Monaco,Courier,monospace;
+                    white-space:pre;
+                </rendition>
+                
+                <!-- Inline -->
+                
+                <rendition xml:id="inline" n="teibp:inline" scheme="css">
+                    display:inline;
+                </rendition>
+                
+                <!-- Alignment. -->
+                <rendition xml:id="center" n="tiebp:center" scheme="css">
+                    display:block;
+                    text-align:center;
+                    margin-left:auto;
+                    margin-right:auto;
+                </rendition>
+                
+                <rendition xml:id="left" n="teibp:left" scheme="css">
+                    text-align:left;
+                </rendition>
+                
+                <rendition xml:id="right" n="teibp:right" scheme="css">
+                    text-align:right;
+                </rendition>
+                
+                <rendition xml:id="justify" n="teibp:justify" scheme="css">
+                    text-align:justify;
+                </rendition>
+                
+                <rendition xml:id="center-block" n="tiebp:center-block" scheme="css">
+                    display:block;
+                    margin-left:auto;
+                    margin-right:auto;
+                </rendition>
+                
+                <!-- Indentation -->
+                <rendition xml:id="hang" n="teibp:hang" scheme="css">
+                    display:block;
+                    padding-left:2.5em;
+                    text-indent:-2.5em;
+                </rendition>
+                
+                <!-- Indentation for verse lines. Results in a “hanging” indent if
+					the line wraps. -->
+                <rendition xml:id="l-indent-01" n="tiebp:l-indent-01" scheme="css">
+                    display:block;
+                    padding-left:4em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-02" n="tiebp:l-indent-02" scheme="css">
+                    display:block;
+                    padding-left:6em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-03" n="tiebp:l-indent-03" scheme="css">
+                    display:block;
+                    padding-left:8em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-04" n="tiebp:l-indent-04" scheme="css">
+                    display:block;
+                    padding-left:10em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-05" n="tiebp:l-indent-05" scheme="css">
+                    display:block;
+                    padding-left:12em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-06" n="tiebp:l-indent-06" scheme="css">
+                    display:block;
+                    padding-left:14em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-07" n="tiebp:l-indent-07" scheme="css">
+                    display:block;
+                    padding-left:16em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-08" n="tiebp:l-indent-08" scheme="css">
+                    display:block;
+                    padding-left:18em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="indent" n="tiebp:indent" scheme="css" scope="before">
+                    /* text-indent:4em; */
+                    /* The above method of describing an indentation for, say, a paragraph is preferred.
+                    The method being used is in response to a bug in some browsers whereby a block
+                    element, like a paragraph, is erroneously re-indented after interruption by another 
+                    block element (like a list, which is valid inside a paragraph). */
+                    content:"\A0\A0\A0\A0\A0\A0";
+                </rendition>
+                
+                <!-- font sizes -->
+                
+                <rendition xml:id="small" n="tiebp:small" scheme="css">
+                    font-size:80%;
+                </rendition>
+                
+                <rendition xml:id="x-small" n="tiebp:x-small" scheme="css">
+                    font-size:70%;
+                </rendition>
+                
+                <rendition xml:id="xx-small" n="tiebp:xx-small" scheme="css">
+                    font-size:60%;
+                </rendition>
+                
+                <rendition xml:id="large" n="tiebp:large" scheme="css">
+                    font-size:110%;
+                </rendition>
+                
+                <rendition xml:id="x-large" n="tiebp:x-large" scheme="css">
+                    font-size:115%;
+                </rendition>
+                
+                <rendition xml:id="xxx-large" n="tiebp:xxx-large" scheme="css">
+                    font-size:120%;
+                </rendition>
+                
+                <rendition xml:id="bracket" n="teibp:bracket" scheme="css"/>
+                
+                <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="before">
+                    content:"&lt;";
+                </rendition>
+                
+                <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="after">
+                    content:">";
+                </rendition>
+                <rendition xml:id="red" scheme="css" n="custom:red">
+                    color:red;
+                </rendition>
+            </tagsDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2025-06-04" who="diane_jakacki">Revised blank template for use with
+                LEAF-Writer editor.</change>
+            <change when="2025-11-10" who="andie silva">Adapted template for using with York College
+                ENG 328 class.</change>
+            <change when="2025-11-12" who="ariana dharambeer">Added transcriptions and first pass at
+                encoding.</change>
+            <change when="2025-11-16" who="andie silva">Reviewed document for errors</change>
+            <change when="2026-02-11" who="andie silva">Added @rend to identify use of italics.</change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="https://archive.org/details/complaintscontai00spen/page/2/mode/1up"/>
+    </facsimile>
+    <text>
+        <body>
+            <pb n="sig. A2r" facs="../images/complaints_1.jpg"/>
+            <div type="printer-to-the-reader">
+                <salute> The Printer to the Gentle Reader. </salute>
+
+                <p><hi rendition="#large">SINCE</hi> my late setting foorth of the <hi rendition="#i"><title>Faerie Queene</title></hi>, finding
+                        that it hath found a fauourable passage amongst you; I have sithence
+                        endeuoured by all good meanes (for the better encrease and accomplishment of
+                        your delights,) to get into my handes such smale Poemes of the same Authors;
+                        as I heard were disperst abroad in sundrie hands, and not easie to bee come
+                        by, by himselfe; some of them hauing bene diuerslie imbeziled and purloyned
+                        from him, since his departure ouer Sea. Of which I haue by good meanes
+                        gathered togeather these fewe parcels present, which I haue caused to bee
+                        imprinted al-<pb n="sig. A2v" facs="../images/complaints_2.jpg"/>
+                            <graphic
+                                url="https://archive.org/details/complaintscontai00spen/page/3/mode/1up"
+                            />
+                        togeather, for that they al seeme to containe like matter of
+                        argument in them: being all complaints and meditations of the world's
+                        vanitie, verie graue and profitable. To which effect I vnderstand that he
+                        besides wrote sundrie others, namelie <title rend="italics"><hi rendition="#i">Ecclesiastes</hi></title>, &amp;
+                    <title rend="italics"><hi rendition="#i">Canticum canticorum</hi></title> translated, <title rend="italics"><hi rendition="#i">A senights
+                        slumber</hi></title>, <title rend="italics"><hi rendition="#i">The hell of louers his
+                            Purgatorie</hi></title>, being all dedicated to Ladies; so as it may seeme he
+                        ment them all to one volume. Besides some other Pamphlets looselie scattered
+                        abroad: as <title rend="italics"><hi rendition="#i">The dying Pellican</hi></title>, <title rend="italics"><hi rendition="#i">The howers of the
+                            Lord</hi></title>, <title rend="italics"><hi rendition="#i">The scarifice of a sinner</hi></title>, <title rend="italics"><hi rendition="#i">The seuen
+                            Psalmes, &amp;tc</hi></title>. which when I can either by
+                        himselfe, or otherwise attaine too, I meane likewise for your fauour sake to
+                        set foorth. In the meane time praying you gentlie to accept of these, and
+                        graciouslie to entertaine the new Poet.</p><closer rend="italics"><salute><hi rendition="#i">I take
+                                leaue.</hi></salute></closer>
+
+
+
+            </div>
+        </body>
+    </text>
+</TEI>
