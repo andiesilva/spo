@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Famous Whore, or Noble Curtizan</title>
+        <author>Garvase Markham</author>
+        <respStmt>
+          <persName>Kaylah Agard</persName>
+          <resp>transcriber</resp>
+          <resp>encoder</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Naya Joseph</persName>
+          <resp>proofreader</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Andie Silva</persName>
+          <resp>proofreader</resp>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Collaboratory for Writing and Research on Culture (CWRC https://cwrc.ca) and Linked Editing Academic Framework (LEAF https://leaf-vre.org).</publisher>
+        <availability>
+          <licence>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This TEI document was adapted from the template created by members of CWRC and LEAF using pedagogical materials from Laura Estill and Rebecca Nesvet.</p>
+      </sourceDesc>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Garvase Markham</author>
+            <title>The Famous Whore, or Noble Curtizan: conteining the lamentable complaint of Paulina, the famous Roman curtizan, sometimes mes. unto the grreat cardinall Hypolito, of Est.</title>
+            <imprint>
+              <publisher>Printed by N.O.for John Budge</publisher>
+              <pubPlace>and are to be sold at shop by the great South gate of Paules.</pubPlace>
+              <date>1609</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+        <msDesc>
+          <msIdentifier>
+            <repository>Henry E. Huntington Library and Art Gallery</repository>
+            <idno>STC 17359</idno>
+          </msIdentifier>
+          <additional>
+            <listBibl>
+              <bibl type="InternetArchive">
+                <link target="https://archive.org/details/bim_early-english-books-1475-1640_the-famous-whore-or-nob_markham-gervase_1609/mode/2up" />
+              </bibl>
+            </listBibl>
+          </additional>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This template was made available for use with the LEAF-Writer semantic editor. It was adapted by Andie Silva and the York College ENG 328 Fall 2025 class.</p>
+      </projectDesc>
+      <editorialDecl>
+        <normalization method="markup">
+          <p>Original spelling maintained with alternate options for modern spelling using the <gi>choice</gi>, <gi>orig</gi> and <gi>reg</gi> elements. Capitalization of nouns has been silently removed/maintained.</p>
+        </normalization>
+        <hyphenation eol="some">
+          <p>End-of-line hyphenation silently removed where appropriate</p>
+        </hyphenation>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-06-04" who="diane_jakacki">Revised blank template for use with LEAF-Writer editor.</change>
+      <change when="2025-11-10" who="andie silva">Adapted template for using with York College ENG 328 class.</change>
+      <change when="2025-11-12" who="kaylah agard">Added transcriptions and first pass at encoding.</change>
+      <change when="2025-11-16" who="andie silva">Proofread initial encoding.</change>
+      <change when="2025-11-25" who="kaylah agard">Final version generated.</change>
+      <change when="2026-02-11" who="andie silva">Final proofing and editing for publication.</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://archive.org/details/bim_early-english-books-1475-1640_the-famous-whore-or-nob_markham-gervase_1609/page/n2/mode/1up" />
+  </facsimile>
+  <text>
+       
+    
+    <body>
+      <pb n="sig. A3r" />
+      <div type="printer-to-the-reader">
+ <lb /><salute>The Printer to the Reader.</salute>
+<lb/>
+<p><g ref="decorative">G</g> <hi rend="italic">entlemen, I <choice><orig>haue</orig><reg>have</reg></choice> <choice>
+<orig>aduentured</orig>
+<reg>adventured</reg>
+</choice> to bring a whore into your company, but with no bad intent, but to give you honest Recreation, not to hurt you in purse or body: Therefore you must <choice> 
+<orig>thinke</orig>
+<reg>think</reg>
+</choice> this is a famous strange whore: for <choice> 
+<orig>shee</orig>
+<reg>she</reg>
+</choice> 
+<choice> 
+<orig>seekes</orig>
+<reg>seeks</reg>
+</choice> the hurt of no man. Wrong her not then, but <choice><orig>giue</orig><reg>give</reg></choice> her kind welcome out of Italy: for she <choice> 
+<orig>hath</orig>
+<reg>had</reg> </choice> <choice> 
+<orig>bin</orig>
+<reg>been</reg>
+</choice> a <choice><orig>meere</orig><reg>mere</reg></choice> stranger to our English nation till this <choice> 
+<orig>howre</orig>
+<reg>hour</reg>
+</choice>. And yet Gentlemen you know some of her kindred: Therefore <choice> 
+<orig>loue</orig>
+<reg>love</reg>
+</choice> her, for their sakes whom you <choice> 
+<orig>loue</orig>
+<reg>love</reg>
+</choice>, and let us <choice><orig>shew</orig><reg>show</reg></choice> our <choice><orig>selues</orig><reg>selves</reg></choice> as courteous as Italians, and <choice> 
+<orig>except</orig>
+<reg>accept</reg>
+</choice> her kindly,</hi></p><closer><hi>Farewell.</hi></closer>
+       </div> 
+    </body>
+  </text>
+</TEI>
