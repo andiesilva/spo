@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THE FAMOVS Whore — rendered TEI body (KA-AI)</title>
+  <style>
+    :root{font-family: -apple-system,system-ui,Segoe UI,Roboto,Helvetica,Arial; color:#111}
+    body{padding:22px; line-height:1.5}
+    header{margin-bottom:16px; display:flex; gap:8px; align-items:center}
+    button.switch{padding:8px 12px; font-size:0.95rem; cursor:pointer}
+    .pb{border-top:1px solid #ddd; padding-top:.5rem; margin:12px 0; color:#555}
+    .printer-to-the-reader{background:#fbfbfb;padding:14px;border:1px solid #eee;max-width:980px}
+    salute{display:block;font-weight:700;margin-bottom:.25rem}
+    /* Decorative letter: make it stand out and reserve spacing to the right */
+    g[ref="decorative"]{
+      float:left;
+      font-size:3.2rem;             /* large initial letter */
+      line-height:1;                /* keep it compact vertically */
+      font-weight:700;
+      margin-right:0.25in;          /* quarter-inch gap between letter and text */
+      shape-outside: margin-box;    /* ensure text flows to the right of the letter */
+      -webkit-margin-before:0;
+      -webkit-margin-after:0;
+    }
+    /* Ensure the main text forms a block to the right of the decorative letter */
+    .printer-to-the-reader hi[rend="italic"],
+    .printer-to-the-reader p > hi {
+      display:block;
+      overflow:hidden;              /* contain the float and keep block layout */
+      margin-top:0;                 /* avoid extra spacing near the letter */
+    }
+    hi[rend="italic"]{font-style:italic}
+    closer{display:inline-block;margin-left:.5rem;font-weight:600}
+    .choice-display{display:inline}
+    .choice-btn{margin-left:6px;font-size:.85rem;padding:2px 8px}
+  </style>
+</head>
+<body>
+  <header>
+    <button id="show-modern" class="switch" aria-pressed="false">Toggle modern</button>
+    <button id="show-original" class="switch" aria-pressed="false">Toggle original</button>
+    <small style="color:#666">Clicking a toggle will switch all &lt;orig&gt; / &lt;reg&gt; choices</small>
+  </header>
+
+  <main id="tei-render">
+    <div class="pb">sig. A3</div>
+
+    <div class="printer-to-the-reader" role="article" aria-label="Printer to the Reader">
+      <p>
+        <lb></lb>
+        <salute>The Printer to the Reader.</salute>
+
+        <g ref="decorative">G</g>
+        <hi rend="italic">
+          entlemen, I have
+          <choice>
+            <orig>aduentured</orig>
+            <reg>adventured</reg>
+          </choice>
+          to bring a whore into your company, but with no bad intent, but to give you honest Recreation, not to hurt you in purse or body: Therefore you must
+          <choice>
+            <orig>thinke</orig>
+            <reg>think</reg>
+          </choice>
+          this is a famous strange whore: for
+          <choice>
+            <orig>shee</orig>
+            <reg>she</reg>
+          </choice>
+          <choice>
+            <orig>seekes</orig>
+            <reg>seeks</reg>
+          </choice>
+          the hurt of no man. Wrong her not then, but give her kind welcome out of Italy: for she
+          <choice>
+            <orig>hath</orig>
+            <reg>had</reg>
+          </choice>
+          <choice>
+            <orig>bin</orig>
+            <reg>been</reg>
+          </choice>
+          a meere stranger to our English nation till this
+          <choice>
+            <orig>howre</orig>
+            <reg>hour</reg>
+          </choice>.
+          And yet Gentlemen you know some of her kindred: Therefore
+          <choice>
+            <orig>loue</orig>
+            <reg>love</reg>
+          </choice>
+          her, for their sakes whom you loue, and let us show our selves as courteous as Italians, and
+          <choice>
+            <orig>except</orig>
+            <reg>accept</reg>
+          </choice>
+          her kindly, <closer>Farewell.</closer>
+        </hi>
+      </p>
+    </div>
+  </main>
+
+  <script>
+    // Utility: clone node and replace any <lb> nodes with <br>
+    function nodeHTMLWithBR(node){
+      if(!node) return '';
+      const clone = node.cloneNode(true);
+      const lbs = Array.from(clone.querySelectorAll ? clone.querySelectorAll('lb') : []);
+      lbs.forEach(lb => {
+        const br = document.createElement('br');
+        lb.parentNode.replaceChild(br, lb);
+      });
+      return clone.innerHTML;
+    }
+
+    // Prepare choice displays (one span per <choice>)
+    const choices = Array.from(document.querySelectorAll('choice'));
+    choices.forEach((choice, idx) => {
+      const orig = choice.querySelector('orig');
+      const reg = choice.querySelector('reg');
+      const display = document.createElement('span');
+      display.className = 'choice-display';
+      display.dataset.choiceIndex = idx;
+      // default display: original if present, otherwise reg
+      display.innerHTML = nodeHTMLWithBR(orig || reg || choice);
+      // keep the choice element in DOM as data source but hide it
+      choice.style.display = 'none';
+      // insert the display where the choice element was
+      choice.parentNode.insertBefore(display, choice);
+    });
+
+    // Global mode setter: 'orig' or 'reg'
+    function setMode(mode){
+      choices.forEach((choice, idx) => {
+        const orig = choice.querySelector('orig');
+        const reg = choice.querySelector('reg');
+        const preferred = mode === 'reg' ? (reg || orig) : (orig || reg);
+        const html = nodeHTMLWithBR(preferred || choice);
+        const disp = document.querySelector('.choice-display[data-choice-index="'+idx+'"]');
+        if(disp) disp.innerHTML = html;
+      });
+    }
+
+    // Wire up top buttons: they act as toggles (press to switch all)
+    const btnModern = document.getElementById('show-modern');
+    const btnOrig = document.getElementById('show-original');
+
+    btnModern.addEventListener('click', () => {
+      setMode('reg');
+      btnModern.setAttribute('aria-pressed','true');
+      btnOrig.setAttribute('aria-pressed','false');
+    });
+
+    btnOrig.addEventListener('click', () => {
+      setMode('orig');
+      btnOrig.setAttribute('aria-pressed','true');
+      btnModern.setAttribute('aria-pressed','false');
+    });
+
+    // Convert any remaining top-level <lb> elements to <br> (outside choice content)
+    (function convertTopLBs(){
+      const lbs = Array.from(document.querySelectorAll('lb'));
+      lbs.forEach(lb=>{
+        const br = document.createElement('br');
+        lb.parentNode && lb.parentNode.replaceChild(br, lb);
+      });
+    })();
+  </script>
+</body>
+</html>
