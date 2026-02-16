@@ -9,17 +9,17 @@
         <title>The Famous Whore, or Noble Curtizan</title>
         <author>Garvase Markham</author>
         <respStmt>
-          <persName>Kaylah Agard</persName>
-          <resp>transcriber</resp>
+          <persName>Kaylah Agard,</persName>
+          <resp>transcriber and</resp>
           <resp>encoder</resp>
         </respStmt>
         <respStmt>
-          <persName>Naya Joseph</persName>
+          <persName>Naya Joseph,</persName>
           <resp>proofreader</resp>
         </respStmt>
         <respStmt>
-          <persName>Andie Silva</persName>
-          <resp>proofreader</resp>
+          <persName>Andie Silva,</persName>
+          <resp>proofreader and</resp>
           <resp>encoder</resp>
         </respStmt>
       </titleStmt>
@@ -320,11 +320,11 @@
        
     
     <body>
-      <pb n="sig. A3r" />
+      <pb n="sig. A3r" facs="../images/famous-whore.jpg"/>
       <div type="printer-to-the-reader">
  <lb /><salute>The Printer to the Reader.</salute>
 <lb/>
-        <p><g ref="decorative" rendition="#x-large">G</g> <hi rendition="#i">ENTLEMEN, I <choice><orig>haue</orig><reg>have</reg></choice> <choice>
+        <p><g ref="decorative" rendition="#xxx-large">G</g><hi rendition="#i">ENTLEMEN, I <choice><orig>haue</orig><reg>have</reg></choice> <choice>
 <orig>aduentured</orig>
 <reg>adventured</reg>
 </choice> to bring a whore into your company, but with no bad intent, but to give you honest Recreation, not to hurt you in purse or body: Therefore you must <choice> 
