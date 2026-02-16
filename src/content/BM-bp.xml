@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Treasurie of Commodious Conceits and Hidden Secrets</title>
+                <author>John Partridge</author>
+                <respStmt>
+                    <persName>Brianna McPherson</persName>
+                    <resp>transcriber</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Victoria Morales</persName>
+                    <resp>proofreader</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Andie Silva</persName>
+                    <resp>proofreader</resp>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Collaboratory for Writing and Research on Culture (CWRC https://cwrc.ca) and Linked Editing Academic Framework (LEAF https://leaf-vre.org).</publisher>
+                <availability>
+                    <licence>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>This TEI document was adapted from the template created by members of CWRC and LEAF using pedagogical materials from Laura Estill and Rebecca Nesvet.</p>
+            </sourceDesc>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>John Partridge</author>
+                        <title>The treasurie of commodious conceits, and hidden secretes Commonlie called The good huswiues closet of prouision, for the health of her houshold. Meete and necessarie for the profitable vse of all estates. Gathered out of sundry experiments, lately practised by men of great knowledge: and now newly corrected, and inlarged, with diuers necessary phisicke helpes, not impertinent to euery good huswife to vse in her house amongst her own famelie.</title>
+                        <imprint>
+                            <publisher>Richard Jones</publisher>
+                            <pubPlace>London</pubPlace>
+                            <pubPlace>At the rose and crown near Holborne Bridge</pubPlace>
+                            <date>1591</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Folger Shakespeare Library</repository>
+                        <idno>STC 4987 copy 1</idno>
+                    </msIdentifier>
+                    <additional>
+                        <listBibl>
+                            <bibl type="LibCat">
+                                <link target="http://hamnet.folger.edu/cgi-bin/Pwebrecon.cgi?BBID=160690"/> 
+                            </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This template was made available for use with the LEAF-Writer semantic editor. It was adapted by Andie Silva and the York College ENG 328 Fall 2025 class.</p>
+            </projectDesc>
+            <editorialDecl>
+                <normalization method="silent">
+                    <p>All words converted to Modern American spelling using Websters 9th Collegiate dictionary. All early modern uses of i, j, u, v, and vv have been silently changed in accordance to modern 20th century typographical practice. Capitalization of nouns has been silently removed/maintained. </p>
+                </normalization>
+                <hyphenation eol="some">
+                    <p>End-of-line hyphenation silently removed where appropriate</p>
+                </hyphenation>
+            </editorialDecl>
+            <tagsDecl>	
+                <!-- Basic text formatting: bold, italic, underline, "normal," etc. -->
+                <rendition xml:id="b" n="tiebp:bold" scheme="css">
+                    font-weight:bold;
+                </rendition> 
+                
+                <rendition xml:id="i" n="tiebp:italic" scheme="css">
+                    font-style:italic;
+                </rendition> 
+                
+                <rendition xml:id="u" n="tiebp:underline" scheme="css">
+                    text-decoration:underline;
+                </rendition> 
+                
+                <rendition xml:id="n" n="teibp:normal" scheme="css">
+                    font-weight:normal;
+                    text-decoration:none;
+                    font-style:normal;
+                </rendition>
+                
+                <rendition xml:id="mono" n="teibp:mono" scheme="css">
+                    font-family:Monaco,Courier,monospace;
+                </rendition>
+                
+                <rendition xml:id="super" n="tiebp:super" scheme="css">
+                    vertical-align:super;
+                    font-size:80%;
+                </rendition>
+                
+                <rendition xml:id="sub" n="tiebp:sub" scheme="css">
+                    vertical-align:sub;
+                    font-size:80%;
+                </rendition>
+                
+                <rendition xml:id="lowercase" n="tiebp:lowercase" scheme="css">
+                    text-transform:lowercase;
+                </rendition>
+                
+                <rendition xml:id="uppercase" n="tiebp:uppercase" scheme="css">
+                    text-transform:uppercase;
+                </rendition>
+                
+                <rendition xml:id="capitalize" n="tiebp:capitalize" scheme="css">
+                    text-transform:capitalize;
+                </rendition>
+                
+                <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+                    font-variant:small-caps;
+                </rendition>
+                
+                <!-- Blocks. -->
+                <rendition xml:id="block" n="tiebp:block" scheme="css">
+                    display:block;
+                </rendition> 
+                <rendition xml:id="block-margins" n="teibp:block-margins" scheme="css">
+                    display:block;
+                    margin-top:1em;
+                    margin-bottom:1em;
+                </rendition>
+                <rendition xml:id="blockquote" n="tiebp:blockquote" scheme="css">
+                    display:block;
+                    font-size:90%;
+                    margin-left:3em;
+                    padding-left:1em;
+                    border-left: 1px solid gray;
+                    margin-top:.75em;
+                    margin-bottom:.75em;
+                    padding-top:.75em;
+                    padding-bottom:.75em;
+                </rendition>
+                
+                <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="before">
+                    <!-- This turns off the default generated quotes for block quotes. -->
+                    content:"" !important;
+                </rendition>
+                
+                <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="after">
+                    <!-- This turns off the default generated quotes for block quotes. -->
+                    content:"" !important;
+                </rendition>
+                
+                <rendition xml:id="codeblock" n="teibp:codeblock" scheme="css">
+                    display: block;
+                    font-size: 80%;
+                    margin-left: 1em;
+                    padding-left: 1em;
+                    border-left: 1px solid gray;
+                    margin-top: .75em;
+                    margin-bottom: .75em;
+                    padding-top: .75em;
+                    padding-bottom: .75em;
+                    font-family:Monaco,Courier,monospace;
+                    white-space:pre;
+                </rendition>
+                
+                <!-- Inline -->
+                
+                <rendition xml:id="inline" n="teibp:inline" scheme="css">
+                    display:inline;
+                </rendition>
+                
+                <!-- Alignment. -->
+                <rendition xml:id="center" n="tiebp:center" scheme="css">
+                    display:block;
+                    text-align:center;
+                    margin-left:auto;
+                    margin-right:auto;
+                </rendition>
+                
+                <rendition xml:id="left" n="teibp:left" scheme="css">
+                    text-align:left;
+                </rendition>
+                
+                <rendition xml:id="right" n="teibp:right" scheme="css">
+                    text-align:right;
+                </rendition>
+                
+                <rendition xml:id="justify" n="teibp:justify" scheme="css">
+                    text-align:justify;
+                </rendition>
+                
+                <rendition xml:id="center-block" n="tiebp:center-block" scheme="css">
+                    display:block;
+                    margin-left:auto;
+                    margin-right:auto;
+                </rendition>
+                
+                <!-- Indentation -->
+                <rendition xml:id="hang" n="teibp:hang" scheme="css">
+                    display:block;
+                    padding-left:2.5em;
+                    text-indent:-2.5em;
+                </rendition>
+                
+                <!-- Indentation for verse lines. Results in a “hanging” indent if
+					the line wraps. -->
+                <rendition xml:id="l-indent-01" n="tiebp:l-indent-01" scheme="css">
+                    display:block;
+                    padding-left:4em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-02" n="tiebp:l-indent-02" scheme="css">
+                    display:block;
+                    padding-left:6em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-03" n="tiebp:l-indent-03" scheme="css">
+                    display:block;
+                    padding-left:8em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-04" n="tiebp:l-indent-04" scheme="css">
+                    display:block;
+                    padding-left:10em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-05" n="tiebp:l-indent-05" scheme="css">
+                    display:block;
+                    padding-left:12em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-06" n="tiebp:l-indent-06" scheme="css">
+                    display:block;
+                    padding-left:14em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-07" n="tiebp:l-indent-07" scheme="css">
+                    display:block;
+                    padding-left:16em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="l-indent-08" n="tiebp:l-indent-08" scheme="css">
+                    display:block;
+                    padding-left:18em;
+                    text-indent:-2em;
+                </rendition>
+                
+                <rendition xml:id="indent" n="tiebp:indent" scheme="css" scope="before">
+                    /* text-indent:4em; */
+                    /* The above method of describing an indentation for, say, a paragraph is preferred.
+                    The method being used is in response to a bug in some browsers whereby a block
+                    element, like a paragraph, is erroneously re-indented after interruption by another 
+                    block element (like a list, which is valid inside a paragraph). */
+                    content:"\A0\A0\A0\A0\A0\A0";
+                </rendition>
+                
+                <!-- font sizes -->
+                
+                <rendition xml:id="small" n="tiebp:small" scheme="css">
+                    font-size:80%;
+                </rendition>
+                
+                <rendition xml:id="x-small" n="tiebp:x-small" scheme="css">
+                    font-size:70%;
+                </rendition>
+                
+                <rendition xml:id="xx-small" n="tiebp:xx-small" scheme="css">
+                    font-size:60%;
+                </rendition>
+                
+                <rendition xml:id="large" n="tiebp:large" scheme="css">
+                    font-size:110%;
+                </rendition>
+                
+                <rendition xml:id="x-large" n="tiebp:x-large" scheme="css">
+                    font-size:115%;
+                </rendition>
+                
+                <rendition xml:id="xxx-large" n="tiebp:xxx-large" scheme="css">
+                    font-size:120%;
+                </rendition>
+                
+                <rendition xml:id="bracket" n="teibp:bracket" scheme="css"/>
+                
+                <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="before">
+                    content:"&lt;";
+                </rendition>
+                
+                <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="after">
+                    content:">";
+                </rendition>
+                <rendition xml:id="red" scheme="css" n="custom:red">
+                    color:red;
+                </rendition>
+            </tagsDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2025-06-04" who="diane_jakacki">Revised blank template for use with LEAF-Writer editor.</change>
+            <change when="2025-11-10" who="andie_silva">Adapted template for using with York College ENG 328 class.</change>
+            <change when="2025-11-12" who="brianna_mcPherson">Added transcriptions and first pass at encoding.</change>
+            <change when="2026-02-11" who="andie_silva">Final proofread for errors. Added full title of the text to biblStruc and checked transcription against EEBO-TCP.</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="https://archive.org/details/bim_early-english-books-1475-1640_the-treasurie-of-commodi_partridge-john_1584/page/n3/mode/2up"/>
+    </facsimile>
+    <text>
+        <body>
+            <pb n="A1v" facs="../images/treasurie.jpg"/>
+            <div type="printer-to-the-reader">
+                <salute>The Printer to all women that covet the practice of good housewivery,<lb/> as well wives as
+maids.</salute> <p>Good housewives, here you have a jewel for your joy. <lb/>A closet to meet your housewivery, to
+practice and employ. <lb/>As well, the gentles of degree, as eke the meaner sort. May practice here
+to purchase health, their household to consort. <lb/>And as the proof be proved true, to remedy
+each grief, <lb/>amongst the rest of the physics helps, the housewives' help is chief. <lb/>Therefore,
+good housewives, once again, I say to you, repair <lb/>onto this closet when you need, and mark
+what ye find there. <lb/>Which is a means to make most things, housewives use pertain. <lb/>Use
+all conserves and syrups sweet to comfort heart and brain.<lb/> For banquets too, here you
+may find your dishes how to frame as Succad, Marmalade, Marchpane to, and each thing else by
+name.<lb/><gap reason="scan cuts off page"></gap>ne powders eke for linnen clothes and woolen, furd or faced,<lb/> to keep them sweet
+and safe from moths, in chests when they be placed.<lb/>Good medicines for present health
+in the closet, here you have <lb/>to maintain life and keep ye young, the chiefess thing ye
+crave. <lb/>Thus, to conclude, I wish ye mark the benefits of this book. <lb/>With gentles state, the
+farmer's wife, and the craftsman's housewife cook.<lb/><gap reason="scan cuts off page"></gap>And, if ye reap commodities by this my
+    friends advice, <lb/><gap reason="scan cuts off page"></gap>then give him thanks, and think not much of four pence for the price.
+</p>
+<closer>Fare Well.</closer>
+            </div>
+        </body>
+    </text>
+</TEI>
